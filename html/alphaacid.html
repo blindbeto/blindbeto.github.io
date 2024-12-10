@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Acid Calculator - HopHelper</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+</head>
+<body style="font-family: 'Lato', sans-serif; background-color: #4caf50;">
+<header class="sticky-header" style="top: 0; background-color: #4caf50; padding: 1em 0; transition: all 0.3s ease;">
+    <div class="container header-content" style="display: flex; justify-content: space-between; align-items: center; position: relative;">
+        <h1 class="app-name" style="margin-right: auto;"><a href="../index.html" style="color: #ffffff; text-decoration: none;">HopHelper</a></h1>
+        <div class="logo" style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center;">
+            <img src="../images/HopHelperGreenTBg.png" alt="HopHelper Logo" style="max-height: 80px;">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#inAction">In Action</a></li>
+                <li style="position: relative;">
+                    <a href="#">Features</a>
+                    <ul class="dropdown">
+                        <li><a href="abvattenuation.html">ABV</a></li>
+                        <li><a href="beercolor.html">Beer Color</a></li>
+                        <li><a href="mashthickness.html">Mash Thickness</a></li>
+                        <li><a href="alphaacid.html">Alpha Acid Calculator</a></li>
+                        <li><a href="colorconverter.html">Color Converter</a></li>
+                        <li><a href="sugarsconverter.html">Sugars Converter</a></li>
+                        <li><a href="liquidmixer.html">Mixer Calculator</a></li>
+                        <li><a href="sugartempcorrector.html">Sugar Temperture Corrector</a></li>
+                        <li><a href="liquidconverter.html">Liquid Converter</a></li>
+                        <li><a href="lengthconverter.html">Length Converter</a></li>
+                        <li><a href="tempconverter.html">Temperature Converter</a></li>
+                        <li><a href="weightconverter.html">Weight Converter</a></li>
+                        <li><a href="foodpairings.html">Beer to Food Pairing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="feature-title" class="light-green" style="background-color: #4caf50; background-image: url('../images/HopsHandsBG.png'); background-size: cover; background-position: center; padding: 2em 0; display: flex; justify-content: center; align-items: center; color: #ffffff;">
+        <div class="container about-section" style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h1>Alpha Acid Calculator</h1>
+        </div>
+    </section>
+    <section id="feature-first-subtitle" class="light-gray" style="padding: 3em 0; margin: 0;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <h1 style="font-size: 3em; font-family: 'Lato', sans-serif;">Tool Overview</h1>
+            <p>The Alpha Acid Calculator is designed to help you accurately adjust the amount of hops needed for a recipe based on differences in alpha acid values between the hops specified in the recipe and the hops you actually have available. Consistent bitterness is essential for achieving a high-quality, repeatable brew, and HopHelper makes this process straightforward. By accounting for variations in alpha acid content between hop batches, the Alpha Acid Calculator helps you ensure that each brew maintains the intended bitterness level, even if you need to substitute hops or use a different harvest.</p>
+            <p>Benefits of using the Alpha Acid Calculator include:</p>
+            <ul>
+                <li>Precision in Bitterness: Maintain the desired bitterness level in your beer by adjusting the hop quantities based on actual alpha acid percentages.</li>
+                <li>Adaptability: Easily adapt recipes when using different hop batches, ensuring that your beer remains consistent across all brews.</li>
+                <li>Improved Recipe Control: Make informed decisions when substituting hops, ensuring you achieve the same taste and quality.</li>
+            </ul>
+            <p>Alpha acids are responsible for the bitterness in beer, which is essential for balancing the sweetness from malt. Calculating the correct amount of hops allows you to match the intended bitterness level precisely, avoiding inconsistencies and ensuring that your beer meets expectations each time you brew.</p>
+        </div>
+    </section>
+    <section id="feature-details" class="light-gray" style="padding: 3em 0; margin: 0; display: flex;">
+        <div class="container" style="max-width: 700px; display: flex;">
+            <div style="flex: 1; padding-right: 5em;">
+                <img src="../images/AlphaAcidCalc.png" alt="Phone Image" style="max-width: 100%; border-radius: 10px;">
+            </div>
+            <div style="flex: 1;">
+                <h2>Key Elements on the Screen</h2>
+                <ul>
+                    <li>Recipe Hop Amount: A text field where you input the amount of hops as specified in the original recipe.</li>
+                    <li>Recipe Hop Alpha Acid Value: A text field for you to input the alpha acid percentage of the hops as listed in the original recipe.</li>
+                    <li>New Hop Alpha Acid Value: A text field where you input the alpha acid percentage of the hops on hand, which may be different from the original recipe.</li>
+                    <li>Result Display: After inputting all three values, the HopHelper will display the calculated amount of hops that should be used.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="additional-info" class="light-gray" style="padding: 3em 0; margin: 0;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <h2>How to Use</h2>
+            <p>The Alpha Acid Calculator makes it easy to adapt to differences in hop batches without compromising the quality and flavor of your beer. Whether you are brewing the same recipe repeatedly or trying out new hops, this tool provides a reliable way to ensure balance in your final product.</p>
+            <ul>
+                <li>Step 1: INPUT RECIPE HOP AMOUNT: Begin by entering the Recipe Hop Amount as indicated in your original recipe. </li>
+                <li>Step 2: ENTER RECIPE ALPHA ACID VALUE: Input the Recipe Hop Alpha Acid Value, which represents the alpha acid percentage as per your original recipe. This value is typically printed on the recipe documentation.</li>
+                <li>Step 3: ENTER NEW HOP ALPHA ACID VALUE: Now, enter the New Hop Alpha Acid Value. This value represents the alpha acid percentage of the hops you have on hand. You can find this percentage on the hop package label.</li>
+                <li>Step 4: CALCULATE: Once all three values are entered, the feature will automatically calculate the correct amount of hops to use to match the bitterness of your original recipe.</li>
+                <li>Step 5: ADJUST BREWING PROCESS: Use the calculated value as the new amount of hops for your brew to ensure the bitterness level stays consistent with the recipe.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="video-tutorial" class="light-green" style="padding: 3em 0; text-align: center;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <h2>Feature in Action</h2>
+            <video controls style="width: 100%; max-width: 800px;">
+                <source src="../videos/feature_in_action.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+</main>
+
+<footer style="margin: 0; padding-top: 0;">
+    <div class="container" style="display: flex; justify-content: space-between; padding: 1em 0;">
+        <!-- First Column -->
+        <div style="flex: 1;">
+            <div style="display: flex; align-items: center;">
+                <h4 style="font-size: 2em;">HopHelper</h4>
+            </div>
+            <ul style="list-style: none; padding: 0; margin-top: 0.5em; text-align: left; line-height: 1.8;">
+                <li><a href="#features" style="color: #fff; text-decoration: none;">Features</a></li>
+                <li><a href="aboutUs.html" style="color: #fff; text-decoration: none;">About Us</a></li>
+                <li><a href="#faq" style="color: #fff; text-decoration: none;">FAQ</a></li>
+                <li><a href="#privacy" style="color: #fff; text-decoration: none;">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Middle Column -->
+        <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+            <img src="../images/HopHelperGreenTBg.png" alt="HopHelper Logo" style="height: 200px;">
+        </div>
+
+        <!-- Third Column -->
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; text-align: right; padding-top: 3em;">
+            <!-- Social Media Icons -->
+            <p style="margin-bottom: 0.5em;">Find us and follow us here:</p>
+            <div style="margin-bottom: 1em;">
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_instagram.png" alt="Instagram" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_youtube.png" alt="YouTube" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_twitterx.png" alt="Twitter" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_tiktok.png" alt="TikTok" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_facebook.png" alt="Facebook" style="height: 44px;"></a>
+            </div>
+            <!-- Store Buttons -->
+            <div>
+                <p style="margin-bottom: 0.5em;">Download the app here:</p>
+                <a href="#" style="margin-right: 10px;"><img src="../images/applestore_button.png" alt="App Store" style="height: 50px;"></a>
+                <a href="#"><img src="../images/googleplay_button.png" alt="Google Play Store" style="height: 50px;"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p style="text-align: center; margin-top: 2em;">&copy; 2024 HopHelper. All rights reserved.</p>
+    </div>
+</footer>
+<script src="../js/script.js"></script>
+</body>
+</html>

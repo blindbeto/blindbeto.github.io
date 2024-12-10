@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABV and Attenuation - HopHelper</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+</head>
+<body style="font-family: 'Lato', sans-serif; background-color: #4caf50;">
+<header class="sticky-header" style="top: 0; background-color: #4caf50; padding: 1em 0; transition: all 0.3s ease;">
+    <div class="container header-content" style="display: flex; justify-content: space-between; align-items: center; position: relative;">
+        <h1 class="app-name" style="margin-right: auto;"><a href="../index.html" style="color: #ffffff; text-decoration: none;">HopHelper</a></h1>
+        <div class="logo" style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center;">
+            <img src="../images/HopHelperGreenTBg.png" alt="HopHelper Logo" style="max-height: 80px;">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#inAction">In Action</a></li>
+                <li style="position: relative;">
+                    <a href="features.html">Features</a>
+                    <ul class="dropdown">
+                        <li><a href="abvattenuation.html">ABV</a></li>
+                        <li><a href="beercolor.html">Beer Color</a></li>
+                        <li><a href="mashthickness.html">Mash Thickness</a></li>
+                        <li><a href="alphaacid.html">Alpha Acid Calculator</a></li>
+                        <li><a href="colorconverter.html">Color Converter</a></li>
+                        <li><a href="sugarsconverter.html">Sugars Converter</a></li>
+                        <li><a href="liquidmixer.html">Mixer Calculator</a></li>
+                        <li><a href="sugartempcorrector.html">Sugar Temperture Corrector</a></li>
+                        <li><a href="liquidconverter.html">Liquid Converter</a></li>
+                        <li><a href="lengthconverter.html">Length Converter</a></li>
+                        <li><a href="tempconverter.html">Temperature Converter</a></li>
+                        <li><a href="weightconverter.html">Weight Converter</a></li>
+                        <li><a href="foodpairings.html">Beer & Food Pairing</a></li>
+                    </ul>
+                </li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="feature-title" class="light-green" style="background-color: #4caf50; background-image: url('../images/HopsHandsBG.png'); background-size: cover; background-position: center; padding: 2em 0; display: flex; justify-content: center; align-items: center; color: #ffffff;">
+        <div class="container about-section" style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h1>ABV and Attenuation Tool</h1>
+        </div>
+    </section>
+    <section id="feature-first-subtitle" class="light-gray" style="padding: 3em 0; margin: 0;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <h1 style="font-size: 3em; font-family: 'Lato', sans-serif;">Tool Overview</h1>
+            <p>The ABV and Attenuation Calculator is designed to help you understand the progress of your fermentation by providing essential metrics such as alcohol content, attenuation, and calorie estimates. By using this tool, HopHelper helps you evaluate how well your yeast is converting sugars into alcohol, allowing you to make informed adjustments to your brewing process. This tool is crucial for any brewer aiming to produce consistent, high-quality beer by monitoring and fine-tuning fermentation.</p>
+            <p>Benefits of using the ABV and Attenuation Calculator include:</p>
+            <ul>
+                <li>Comprehensive Fermentation Analysis: Get detailed insights into your fermentation process, including alcohol content, attenuation, and calorie contributions.</li>
+                <li>Better Control Over Fermentation: Use real-time data to evaluate how effectively your yeast is fermenting, allowing you to adjust variables for optimal performance.</li>
+                <li>Precision in Recipe Replication: Ensure that your final product consistently meets your expected standards for flavor, alcohol strength, and quality.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="feature-details" class="light-gray" style="padding: 3em 0; margin: 0; display: flex;">
+        <div class="container" style="max-width: 700px; display: flex;">
+            <div style="flex: 1; padding-right: 5em;">
+                <img src="../images/ABVandAtt.png" alt="Phone Image" style="max-width: 100%; border-radius: 10px;">
+            </div>
+            <div style="flex: 1;">
+                <h2>Key Elements on the Screen</h2>
+                <ul>
+                    <li>Unit Selection: A dropdown menu where you select your preferred unit of measurement for the sugar values. This could be in Specific Gravity, Plato, or Brix.</li>
+                    <li>Initial Sugar Value: A text field to the left where you enter the initial sugar concentration of your wort or substance. This value represents the original gravity or sugar content before fermentation begins.</li>
+                    <li>Final/Current Sugar Value: A text field to the right where you enter the final or current sugar concentration of your wort. This value represents the gravity or sugar content at the current stage of fermentation or at the end of fermentation.</li>
+                    <li>Results Display: After entering the unit, initial sugar value, and final sugar value, HopHelper will provide a series of calculated results, including:</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="additional-info" class="light-gray" style="padding: 3em 0; margin: 0;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <h2>Result Details</h2>
+            <ul>
+                <li>Alcohol by Volume (ABV): Calculated using three different industry-standard formulas (Hall, Cutaia, and another common formula).</li>
+                <li>Alcohol by Weight (ABW): Represents the weight of alcohol in your beer relative to the total weight.</li>
+                <li>Attenuation: Shows the percentage of sugars converted to alcohol and CO2 during fermentation.</li>
+                <li>Real Attenuation: A more accurate measurement of sugar conversion that accounts for the non-fermentable sugars remaining in the beer.</li>
+                <li>Alcohol Calories: The estimated calories contributed by alcohol in the beer.</li>
+                <li>Carbohydrate Calories: The estimated calories contributed by the remaining carbohydrates.</li>
+                <li>Total Calories: The sum of alcohol and carbohydrate calories, providing an overall caloric value per serving.</li>
+            </ul>
+            <h2>How to Use</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus id sapien id ligula vehicula sodales.</p>
+            <ul>
+                <li>Step 1: Select Unit of Measurement: Begin by selecting your preferred unit of measurement from the Unit Selection dropdown menu (e.g., Specific Gravity, Plato, or Brix).</li>
+                <li>Step 2: Enter Initial Sugar Value: In the Initial Sugar Value text field, enter the sugar concentration of your wort before fermentation. This is often called the Original Gravity (OG).</li>
+                <li>Step 3: Enter Final Sugar Value: In the Final/Current Sugar Value text field, enter the current or final sugar concentration of your wort. This is often called the Final Gravity (FG).</li>
+                <li>Step 4: View Results: HopHelper will automatically calculate and display a variety of metrics, including the different ABV values, ABW, attenuation levels, and caloric content. These insights will help you assess the status of your fermentation and guide you in achieving the desired outcome for your brew.</li>
+            </ul>
+            <h2>Additional Information</h2>
+            <ul>
+                <li>Units of Measurement: HopHelper allows you to choose between different units for measuring sugar concentration—Specific Gravity (SG), Plato, and Brix. Specific Gravity is commonly used in homebrewing and represents the density of the wort relative to water. Plato and Brix are similar metrics that measure sugar concentration as a percentage by weight. While Plato is more commonly used by professional brewers, Brix is frequently used in winemaking. Each unit offers a different perspective on sugar content, but HopHelper converts between them seamlessly to fit your preference.</li>
+                <li>Attenuation vs. Real Attenuation: Attenuation represents the percentage of sugars converted to alcohol, while real attenuation takes into account non-fermentable sugars that remain in the beer. Real attenuation gives a more precise picture of the fermentation efficiency and residual sweetness.</li>
+                <li>Calories in Alcohol: The calorie content in beer comes from both alcohol and carbohydrates. Alcohol calories are derived from the ethanol produced during fermentation, while carbohydrate calories come from unfermented sugars. Understanding these values can help you make decisions about your beer's strength and residual sweetness, as well as provide important information for those conscious of caloric intake.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="video-tutorial" class="light-green" style="padding: 3em 0; margin: 0; text-align: center;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <h2>Feature in Action</h2>
+            <video controls style="width: 100%; max-width: 800px;">
+                <source src="../videos/feature_in_action.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+</main>
+
+<footer style="margin: 0; padding-top: 0;">
+    <div class="container" style="display: flex; justify-content: space-between; padding: 1em 0;">
+        <!-- First Column -->
+        <div style="flex: 1;">
+            <div style="display: flex; align-items: center;">
+                <h4 style="font-size: 2em;">HopHelper</h4>
+            </div>
+            <ul style="list-style: none; padding: 0; margin-top: 0.5em; text-align: left; line-height: 1.8;">
+                <li><a href="#features" style="color: #fff; text-decoration: none;">Features</a></li>
+                <li><a href="aboutUs.html" style="color: #fff; text-decoration: none;">About Us</a></li>
+                <li><a href="#faq" style="color: #fff; text-decoration: none;">FAQ</a></li>
+                <li><a href="#privacy" style="color: #fff; text-decoration: none;">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Middle Column -->
+        <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+            <img src="../images/HopHelperGreenTBg.png" alt="HopHelper Logo" style="height: 200px;">
+        </div>
+
+        <!-- Third Column -->
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; text-align: right; padding-top: 3em;">
+            <!-- Social Media Icons -->
+            <p style="margin-bottom: 0.5em;">Find us and follow us here:</p>
+            <div style="margin-bottom: 1em;">
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_youtube.png" alt="YouTube" style="height: 44px;"></a>
+                <!--
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_instagram.png" alt="Instagram" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_twitterx.png" alt="Twitter" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_tiktok.png" alt="TikTok" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_facebook.png" alt="Facebook" style="height: 44px;"></a>
+                -->
+            </div>
+            <!-- Store Buttons -->
+            <div>
+                <p style="margin-bottom: 0.5em;">Download the app here:</p>
+                <a href="#" style="margin-right: 10px;"><img src="../images/applestore_button.png" alt="App Store" style="height: 50px;"></a>
+                <!--
+                <a href="#"><img src="../images/googleplay_button.png" alt="Google Play Store" style="height: 50px;"></a>
+                -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p style="text-align: center; margin-top: 2em;">&copy; 2024 HopHelper. All rights reserved.</p>
+    </div>
+</footer>
+<script src="../js/script.js"></script>
+</body>
+</html>

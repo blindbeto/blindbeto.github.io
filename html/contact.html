@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HopHelper</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+</head>
+<body style="font-family: 'Lato', sans-serif; background-color: #4caf50;">
+<header class="sticky-header" style="top: 0; background-color: #4caf50; padding: 1em 0; transition: all 0.3s ease;">
+    <div class="container header-content" style="display: flex; justify-content: space-between; align-items: center; position: relative;">
+        <h1 class="app-name" style="margin-right: auto;"><a href="../index.html" style="color: #ffffff; text-decoration: none;">HopHelper</a></h1>
+        <div class="logo" style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center;">
+            <img src="../images/HopHelperGreenTBg.png" alt="HopHelper Logo" style="max-height: 80px;">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#inAction">In Action</a></li>
+                <li style="position: relative;">
+                    <a href="features.html">Features</a>
+                    <ul class="dropdown">
+                        <li><a href="abvattenuation.html">ABV</a></li>
+                        <li><a href="beercolor.html">Beer Color</a></li>
+                        <li><a href="mashthickness.html">Mash Thickness</a></li>
+                        <li><a href="alphaacid.html">Alpha Acid Calculator</a></li>
+                        <li><a href="colorconverter.html">Color Converter</a></li>
+                        <li><a href="sugarsconverter.html">Sugars Converter</a></li>
+                        <li><a href="liquidmixer.html">Mixer Calculator</a></li>
+                        <li><a href="sugartempcorrector.html">Sugar Temperture Corrector</a></li>
+                        <li><a href="liquidconverter.html">Liquid Converter</a></li>
+                        <li><a href="lengthconverter.html">Length Converter</a></li>
+                        <li><a href="tempconverter.html">Temperature Converter</a></li>
+                        <li><a href="weightconverter.html">Weight Converter</a></li>
+                        <li><a href="foodpairings.html">Beer & Food Pairing</a></li>
+                    </ul>
+                </li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="contact" class="light-green" style="background-color: #4caf50; background-image: url('../images/HopsHandsBG.png'); background-size: cover; background-position: center; padding: 2em 0; display: flex; justify-content: center; align-items: center; color: #ffffff;">
+        <div class="container about-section" style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+    <section id="contact-form-section" class="light-gray" style="padding: 3em 0; margin: 0;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out.</p>
+            <form action="#" method="post" style="margin-top: 2em;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" maxlength="50" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" maxlength="100" required>
+
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" style="width: 100%; height: 2.5em;" required>
+                    <option value="">Please select an option</option>
+                    <option value="issues">Issues with app</option>
+                    <option value="ideas">Ideas to improve</option>
+                    <option value="features">New features</option>
+                    <option value="general">General questions</option>
+                    <option value="brewing">Brewing related questions</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" maxlength="500" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer style="margin: 0; padding-top: 0;">
+    <div class="container" style="display: flex; justify-content: space-between; padding: 1em 0;">
+        <!-- First Column -->
+        <div style="flex: 1;">
+            <div style="display: flex; align-items: center;">
+                <h4 style="font-size: 2em;">HopHelper</h4>
+            </div>
+            <ul style="list-style: none; padding: 0; margin-top: 0.5em; text-align: left; line-height: 1.8;">
+                <li><a href="#features" style="color: #fff; text-decoration: none;">Features</a></li>
+                <li><a href="aboutUs.html" style="color: #fff; text-decoration: none;">About Us</a></li>
+                <li><a href="#faq" style="color: #fff; text-decoration: none;">FAQ</a></li>
+                <li><a href="#privacy" style="color: #fff; text-decoration: none;">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Middle Column -->
+        <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+            <img src="../images/HopHelperGreenTBg.png" alt="HopHelper Logo" style="height: 200px;">
+        </div>
+
+        <!-- Third Column -->
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; text-align: right; padding-top: 3em;">
+            <!-- Social Media Icons -->
+            <p style="margin-bottom: 0.5em;">Find us and follow us here:</p>
+            <div style="margin-bottom: 1em;">
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_instagram.png" alt="Instagram" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_youtube.png" alt="YouTube" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_twitterx.png" alt="Twitter" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_tiktok.png" alt="TikTok" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_facebook.png" alt="Facebook" style="height: 44px;"></a>
+            </div>
+            <!-- Store Buttons -->
+            <div>
+                <p style="margin-bottom: 0.5em;">Download the app here:</p>
+                <a href="#" style="margin-right: 10px;"><img src="../images/applestore_button.png" alt="App Store" style="height: 50px;"></a>
+                <a href="#"><img src="../images/googleplay_button.png" alt="Google Play Store" style="height: 50px;"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p style="text-align: center; margin-top: 2em;">&copy; 2024 HopHelper. All rights reserved.</p>
+    </div>
+</footer>
+<script src="../js/script.js"></script>
+</body>
+</html>

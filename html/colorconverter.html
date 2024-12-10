@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Converter - HopHelper</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+</head>
+<body style="font-family: 'Lato', sans-serif; background-color: #4caf50;">
+<header class="sticky-header" style="top: 0; background-color: #4caf50; padding: 1em 0; transition: all 0.3s ease;">
+    <div class="container header-content" style="display: flex; justify-content: space-between; align-items: center; position: relative;">
+        <h1 class="app-name" style="margin-right: auto;"><a href="../index.html" style="color: #ffffff; text-decoration: none;">HopHelper</a></h1>
+        <div class="logo" style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center;">
+            <img src="../images/HopHelperGreenTBg.png" alt="HopHelper Logo" style="max-height: 80px;">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#inAction">In Action</a></li>
+                <li style="position: relative;">
+                    <a href="#">Features</a>
+                    <ul class="dropdown">
+                        <li><a href="abvattenuation.html">ABV</a></li>
+                        <li><a href="beercolor.html">Beer Color</a></li>
+                        <li><a href="mashthickness.html">Mash Thickness</a></li>
+                        <li><a href="alphaacid.html">Alpha Acid Calculator</a></li>
+                        <li><a href="colorconverter.html">Color Converter</a></li>
+                        <li><a href="sugarsconverter.html">Sugars Converter</a></li>
+                        <li><a href="liquidmixer.html">Mixer Calculator</a></li>
+                        <li><a href="sugartempcorrector.html">Sugar Temperture Corrector</a></li>
+                        <li><a href="liquidconverter.html">Liquid Converter</a></li>
+                        <li><a href="lengthconverter.html">Length Converter</a></li>
+                        <li><a href="tempconverter.html">Temperature Converter</a></li>
+                        <li><a href="weightconverter.html">Weight Converter</a></li>
+                        <li><a href="foodpairings.html">Beer to Food Pairing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="feature-title" class="light-green" style="background-color: #4caf50; background-image: url('../images/HopsHandsBG.png'); background-size: cover; background-position: center; padding: 2em 0; display: flex; justify-content: center; align-items: center; color: #ffffff;">
+        <div class="container about-section" style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h1>Color Converter</h1>
+        </div>
+    </section>
+    <section id="feature-first-subtitle" class="light-gray" style="padding: 3em 0; margin: 0;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <h1 style="font-size: 3em; font-family: 'Lato', sans-serif;">Tool Overview</h1>
+            <p>The Color Converter is a simple yet effective tool that allows you to convert beer color values between different units commonly used by brewers: Lovibond, EBC, and SRM. These three units are industry standards for measuring beer color, and the ability to convert between them ensures consistency in your brewing process. By using HopHelper's Color Converter, you can easily adapt recipes or communicate with brewers who use different measurement systems.</p>
+            <p>Benefits of using the Color Converter include:</p>
+            <ul>
+                <li>Unit Consistency: Easily convert color values to match the system used in your recipes or brewing community.</li>
+                <li>Recipe Adaptation: Quickly adjust recipes to match available ingredients or follow industry standards.</li>
+                <li>Accurate Color Representation: Ensure that your beer color is communicated accurately, regardless of the unit used.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="feature-details" class="light-gray" style="padding: 3em 0; margin: 0; display: flex;">
+        <div class="container" style="max-width: 700px; display: flex;">
+            <div style="flex: 1; padding-right: 5em;">
+                <img src="../images/ColorConverter.png" alt="Phone Image" style="max-width: 100%; border-radius: 10px;">
+            </div>
+            <div style="flex: 1;">
+                <h2>Key Elements on the Screen</h2>
+                <ul>
+                    <li>Lovibond Value: A text field where you enter the Lovibond value if you are converting from this unit. Lovibond is a traditional measure used mainly for malt color, but it can also be used to estimate beer color.</li>
+                    <li>EBC Value: A text field where you enter the EBC (European Brewery Convention) value if you are converting from this unit. EBC is commonly used in Europe and provides a numeric value that correlates with the color intensity of the beer.</li>
+                    <li>SRM Value: A text field where you enter the SRM (Standard Reference Method) value if you are converting from this unit. SRM is the most widely used color standard in the United States, representing the color of beer in numerical terms.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="additional-info" class="light-gray" style="padding: 3em 0; margin: 0;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <h2>How to Use</h2>
+            <p>To use the Color Converter effectively, follow these steps:</p>
+            <ul>
+                <li>Step 1: Enter Base Value: Enter the value of the beer color into the text field of the unit from which you are converting (e.g., Lovibond, EBC, or SRM).</li>
+                <li>Step 2: View Converted Values: HopHelper will automatically calculate and display the equivalent values in the other two units, allowing you to understand the beer color in different measurement systems.</li>
+            </ul>
+            <h2>Additional Information</h2>
+            <ul>
+                <li>Lovibond: The Lovibond scale was initially developed to measure the color of malts and is still used today in some contexts. It is one of the oldest color measurement systems in brewing and provides a visual reference for malt and beer color. The higher the Lovibond value, the darker the malt or beer.</li>
+                <li>EBC (European Brewery Convention): The EBC color scale is commonly used throughout Europe and is similar to SRM. The EBC value is typically about 1.97 times the SRM value, providing a slightly more refined measurement of color intensity.</li>
+                <li>SRM (Standard Reference Method): SRM is the most popular color standard in the United States. It represents the absorbance of a beer sample at a specific wavelength of light, providing a consistent numerical value for the beer's color. The SRM value increases with the darkness of the beer, allowing brewers to easily communicate color expectations.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="video-tutorial" class="light-green" style="padding: 3em 0; text-align: center;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <h2>Feature in Action</h2>
+            <video controls style="width: 100%; max-width: 800px;">
+                <source src="../videos/feature_in_action.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+</main>
+
+<footer style="margin: 0; padding-top: 0;">
+    <div class="container" style="display: flex; justify-content: space-between; padding: 1em 0;">
+        <!-- First Column -->
+        <div style="flex: 1;">
+            <div style="display: flex; align-items: center;">
+                <h4 style="font-size: 2em;">HopHelper</h4>
+            </div>
+            <ul style="list-style: none; padding: 0; margin-top: 0.5em; text-align: left; line-height: 1.8;">
+                <li><a href="#features" style="color: #fff; text-decoration: none;">Features</a></li>
+                <li><a href="aboutUs.html" style="color: #fff; text-decoration: none;">About Us</a></li>
+                <li><a href="#faq" style="color: #fff; text-decoration: none;">FAQ</a></li>
+                <li><a href="#privacy" style="color: #fff; text-decoration: none;">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Middle Column -->
+        <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+            <img src="../images/HopHelperGreenTBg.png" alt="HopHelper Logo" style="height: 200px;">
+        </div>
+
+        <!-- Third Column -->
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; text-align: right; padding-top: 3em;">
+            <!-- Social Media Icons -->
+            <p style="margin-bottom: 0.5em;">Find us and follow us here:</p>
+            <div style="margin-bottom: 1em;">
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_instagram.png" alt="Instagram" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_youtube.png" alt="YouTube" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_twitterx.png" alt="Twitter" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_tiktok.png" alt="TikTok" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="../images/social_facebook.png" alt="Facebook" style="height: 44px;"></a>
+            </div>
+            <!-- Store Buttons -->
+            <div>
+                <p style="margin-bottom: 0.5em;">Download the app here:</p>
+                <a href="#" style="margin-right: 10px;"><img src="../images/applestore_button.png" alt="App Store" style="height: 50px;"></a>
+                <a href="#"><img src="../images/googleplay_button.png" alt="Google Play Store" style="height: 50px;"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p style="text-align: center; margin-top: 2em;">&copy; 2024 HopHelper. All rights reserved.</p>
+    </div>
+</footer>
+<script src="../js/script.js"></script>
+</body>
+</html>
