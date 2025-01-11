@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+main {
+    margin-top: 60px; /* Matches the header height */
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -60,12 +64,25 @@ header {
     padding-right: 2em;
 }
 
+header.desktop-header {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;Fstick
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
 .header-content {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    overflow: visible;
 }
 
 .app-name {
@@ -76,10 +93,6 @@ header {
 .logo img {
     height: 50px;
     margin: 0 1em;
-}
-
-header.sticky-header {
-    padding: 0.5em 0;
 }
 
 header nav ul {
@@ -150,6 +163,8 @@ header nav ul li ul.dropdown li a:hover {
     background-color: #45a049; /* Change background color on hover */
 }
 
+
+/* Style details for DESKTOP FOOTER*/
 footer {
     text-align: center;
     padding: 1em 0;
@@ -158,6 +173,72 @@ footer {
     margin-top: 2em;
 }
 
+
+/* Style details for MOBILE FOOTER*/
+footer.mobile-footer {
+    background-color: #333;
+    color: white;
+    padding: 2em 1em;
+}
+
+footer .mobile-footer container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer.mobile-footer h4 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+footer.mobile-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+    text-align: center;
+}
+
+footer.mobile-footer ul li {
+    margin: 0.5em 0;
+}
+
+footer.mobile-footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer.mobile-footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer.mobile-footer .social-media, footer.mobile-footer .store-buttons {
+    margin: 1em 0;
+    text-align: center;
+}
+
+footer.mobile-footer .social-media img, footer.mobile-footer .store-buttons img {
+    height: 40px;
+    margin: 0 10px;
+}
+
+footer.mobile-footer p {
+    text-align: center;
+    margin: 2em 0 0;
+}
+
+/* Default: Show desktop footer, hide mobile footer */
+footer.desktop-footer {
+    display: block;
+}
+
+footer.mobile-footer {
+    display: none;
+}
+
+
+
+/* Style details for SECTION*/
 section {
     padding: 2em 0;
     margin-top: 5em; /* Added to avoid overlapping with fixed header */
@@ -171,6 +252,7 @@ section {
     background-color: #f4f4f4;
 }
 
+/* Style details for FORM*/
 form label {
     display: block;
     margin: 0.5em 0 0.2em;
@@ -184,6 +266,7 @@ form input, form textarea {
     border-radius: 5px;
 }
 
+/* Style details for BUTTON*/
 button[type="submit"] {
     background-color: #4caf50;
     color: #fff;
@@ -197,7 +280,7 @@ button[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Style for the Features Section */
+/* Style for the FEATURES Section */
 .features-section {
     color: white;
 }
@@ -236,14 +319,14 @@ button[type="submit"]:hover {
     line-height: 1.6;
 }
 
-/* Style for the feature rows */
+/* Style for the FEATURES rows */
 .feature-row {
     display: flex;
     align-items: center;
     margin: 2em 0;
 }
 
-/* Style for individual feature items */
+/* Style for individual FEATURES items */
 .feature-item {
     flex: 1;
     padding: 1em;
@@ -321,4 +404,136 @@ button[type="submit"]:hover {
 
 .faq-question:hover {
     background-color: #45a049;
+}
+
+/* Style details for MOBILE HEADER*/
+header.mobile-header {
+    display: none;
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: none;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.mobile-logo {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-logo img {
+    max-height: 50px;
+}
+
+.mobile-app-name {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 1.5em;
+}
+
+.hamburger-menu {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.mobile-dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%; /* Full width of the screen */
+    max-height: calc(100vh - 60px); /* Dropdown height limited to viewport */
+    overflow-y: auto; /* Adds scroll for overflow */
+    background-color: #4caf50;
+    z-index: 9999; /* Higher than any content below */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-dropdown-menu a.indented {
+    /*font-style: italic; ---  DONT ERASE, COMMENTED OUT IN CASE IT CAN BE USED IN THE FUTURE*/
+    padding-left: 3em;
+}
+
+.mobile-dropdown-menu a.bold {
+    font-weight: bold;D
+}
+
+.mobile-dropdown-menu.open {
+    display: flex;
+}
+
+.mobile-dropdown-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 0.75em 1em;
+}
+
+.mobile-dropdown-menu a:hover {
+    background-color: #45a049;
+}
+
+/* Style details for MEDIA RESTRICTIONS TO SELECT DESCKTOP OR MOBILE*/
+@media (max-width: 1100px) {
+    header.desktop-header {
+        display: none;
+    }
+
+    header.mobile-header {
+        display: flex;
+    }
+
+    .mobile-dropdown-menu {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #4caf50;
+    }
+
+    footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer .container > div {
+        flex: 1;
+        text-align: left;
+        padding: 0 1em;
+    }
+
+    footer .container > div:nth-child(2) {
+        text-align: center;
+    }
+
+    footer .container > div:last-child {
+        text-align: right;
+    }
+
+    footer.desktop-footer {
+        display: none;
+    }
+
+    footer.mobile-footer {
+        display: block;
+    }
+}
+
+@media (max-width: 702px) {
+    header.mobile-header {
+        padding-bottom: 1em;
+    }
+
+    .mobile-dropdown-menu {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #4caf50;
+    }
 }

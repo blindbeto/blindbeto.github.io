@@ -57,3 +57,8 @@ if (document.querySelectorAll('.faq-question').length > 0) {
         });
     });
 }
+
+function toggleDropdown() {
+        const dropdownMenu = document.getElementById('mobileDropdownMenu');
+        dropdownMenu.classList.toggle('open');
+    }
