@@ -285,6 +285,13 @@ button[type="submit"]:hover {
     color: white;
 }
 
+/* Default font size for desktop - unchanged */
+#feature-title h1 {
+    font-size: 3em; /* Keeps desktop font size as it is */
+    line-height: 1.2; /* Space between lines */
+    word-wrap: break-word; /* Ensures long words break if necessary */
+}
+
 .features-section h2 {
     text-align: left;
     font-size: 3em;
@@ -535,5 +542,19 @@ header.mobile-header {
         right: 0;
         width: 100%;
         background-color: #4caf50;
+    }
+}
+
+/* Smaller screens: Tablets */
+@media (max-width: 768px) {
+    #feature-title h1 {
+        font-size: 2.5em; /* Slightly smaller for tablets */
+    }
+}
+
+/* Smaller screens: Phones */
+@media (max-width: 480px) {
+    #feature-title h1 {
+        font-size: 2em; /* Further reduce for phones */
     }
 }

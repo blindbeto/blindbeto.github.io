@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HopHelper Support</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header.desktop-header {
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+
+        header.mobile-header {
+            display: none;
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 1em;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .mobile-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .mobile-logo img {
+            max-height: 50px;
+        }
+
+        .mobile-app-name {
+            text-align: center;
+            flex-grow: 1;
+            font-size: 1.5em;
+        }
+
+        .hamburger-menu {
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        .mobile-dropdown-menu {
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            top: 60px;
+            right: 10px;
+            background-color: #4caf50;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        .mobile-dropdown-menu.open {
+            display: flex;
+        }
+
+        .mobile-dropdown-menu a {
+            text-decoration: none;
+            color: white;
+            padding: 0.75em 1em;
+        }
+
+        .mobile-dropdown-menu a:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 768px) {
+            header.desktop-header {
+                display: none;
+            }
+
+            header.mobile-header {
+                display: flex;
+            }
+
+            footer .container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            footer .container > div {
+                flex: 1;
+                text-align: left;
+                padding: 0 1em;
+            }
+
+            footer .container > div:nth-child(2) {
+                text-align: center;
+            }
+
+            footer .container > div:last-child {
+                text-align: right;
+            }
+        }
+
+        @media (max-width: 702px) {
+            header.mobile-header {
+                padding-bottom: 1em;
+            }
+
+            .mobile-dropdown-menu {
+                position: fixed;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                background-color: #4caf50;
+            }
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1em;
+            position: relative;
+            z-index: 2000;
+        }
+
+        header nav ul li {
+            margin: 0;
+            display: inline-block;
+            position: relative;
+            z-index: 2000;
+        }
+
+        header nav ul li a {
+            display: block;
+            padding: 0.5px 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        header nav ul li ul.dropdown li {
+            display: block;
+            }
+
+        header nav ul li ul.dropdown {
+            width: 250px;
+            background: #4caf50;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 9999;
+            display: none;
+            margin: 0;
+            padding: 5px 0;
+            list-style: none;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+            }
+
+        header nav ul li a:hover {
+            box-shadow: 0 0 20px rgba(0, 128, 0, 0.6); /* Adjust the color and blur to your liking */
+            transition: all 0.3s ease; /* Smooth transition for the effect */
+            /*background: #45a049; --- Original Code. A simple version of the highlight for the button*/
+            }
+
+        header nav ul li:hover ul.dropdown {
+            display: block;
+            }
+
+        /* Add hover color for dropdown links */
+        header nav ul li ul.dropdown li a {
+            padding: 10px 20px;
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            background-color: #4caf50;
+            overflow: visible;
+        }
+
+        header nav ul li ul.dropdown li a:hover {
+            background-color: #45a049; /* Change background color on hover */
+        }
+
+        footer.mobile-footer {
+            background-color: #333;
+            color: white;
+            padding: 2em 1em;
+        }
+
+        footer .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer.mobile-footer h4 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        footer.mobile-footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 1em 0;
+            text-align: center;
+        }
+
+        footer.mobile-footer ul li {
+            margin: 0.5em 0;
+        }
+
+        footer.mobile-footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer.mobile-footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer.mobile-footer .social-media, footer.mobile-footer .store-buttons {
+            margin: 1em 0;
+            text-align: center;
+        }
+
+        footer.mobile-footer .social-media img, footer.mobile-footer .store-buttons img {
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        footer.mobile-footer p {
+            text-align: center;
+            margin: 2em 0 0;
+        }
+    </style>
+</head>
+<body>
+<!-- Desktop Header -->
+<header class="desktop-header">
+    <div class="logo">
+        <img src="images/HopHelperGreenTBg.png" alt="HopHelper Logo">
+    </div>
+    <div class="app-name">HopHelper</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#inAction">In Action</a></li>
+            <li style="position: relative;">
+                <a href="html/features.html">Features</a>
+                <ul class="dropdown">
+                    <li><a href="html/abvattenuation.html">ABV</a></li>
+                    <li><a href="html/beercolor.html">Beer Color</a></li>
+                    <li><a href="html/mashthickness.html">Mash Thickness</a></li>
+                    <li><a href="html/alphaacid.html">Alpha Acid Calculator</a></li>
+                    <li><a href="html/colorconverter.html">Color Converter</a></li>
+                    <li><a href="html/sugarsconverter.html">Sugars Converter</a></li>
+                    <li><a href="html/liquidmixer.html">Mixer Calculator</a></li>
+                    <li><a href="html/sugartempcorrector.html">Sugar Temperture Corrector</a></li>
+                    <li><a href="html/liquidconverter.html">Liquid Converter</a></li>
+                    <li><a href="html/lengthconverter.html">Length Converter</a></li>
+                    <li><a href="html/tempconverter.html">Temperature Converter</a></li>
+                    <li><a href="html/weightconverter.html">Weight Converter</a></li>
+                    <li><a href="html/foodpairings.html">Beer & Food Pairing</a></li>
+                </ul>
+            </li>
+            <li><a href="html/faq.html">FAQ</a></li>
+            <li><a href="html/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Mobile Header -->
+<header class="mobile-header">
+    <div class="mobile-logo">
+        <img src="images/HopHelperGreenTBg.png" alt="HopHelper Logo">
+    </div>
+    <div class="mobile-app-name">HopHelper</div>
+    <div class="hamburger-menu" onclick="toggleDropdown()">☰</div>
+</header>
+
+<div class="mobile-dropdown-menu" id="mobileDropdownMenu">
+    <a href="html/abvattenuation.html">ABV Calculator</a>
+    <a href="html/beercolor.html">Beer Color</a>
+    <a href="html/mashthickness.html">Mash Thickness</a>
+    <a href="html/alphaacid.html">Alpha Acid Calculator</a>
+    <a href="html/contact.html">Contact</a>
+</div>
+
+<main>
+    <section id="home">
+        <!-- Main content -->
+    </section>
+</main>
+
+<!-- Mobile Footer -->
+<footer class="mobile-footer">
+    <div class="container">
+        <!-- First Row: App Name -->
+        <h4>HopHelper</h4>
+
+        <!-- Second Row: Links and Logo -->
+        <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <!-- Links -->
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="html/aboutUs.html">About Us</a></li>
+                <li><a href="html/faq.html">FAQ</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+            <!-- Logo -->
+            <div>
+                <img src="images/HopHelperGreenTBg.png" alt="HopHelper Logo" style="height: 150px;">
+            </div>
+        </div>
+
+        <!-- Third Row: Social Media and Store Buttons -->
+        <div class="social-media">
+            <p>Find us and follow us here:</p>
+            <!-- Social Media Icons -->
+            <!-- Uncomment and replace # with links -->
+            <!--
+            <a href="#"><img src="images/social_youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="images/social_instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/social_twitterx.png" alt="Twitter"></a>
+            <a href="#"><img src="images/social_tiktok.png" alt="TikTok"></a>
+            <a href="#"><img src="images/social_facebook.png" alt="Facebook"></a>
+            -->
+        </div>
+
+        <div class="store-buttons">
+            <p>Download the app here:</p>
+            <!-- Store Buttons -->
+            <!-- Uncomment and replace # with links -->
+            <!--
+            <a href="#"><img src="images/applestore_button.png" alt="App Store"></a>
+            <a href="#"><img src="images/googleplay_button.png" alt="Google Play Store"></a>
+            -->
+        </div>
+
+        <!-- Fourth Row: Rights Reserved -->
+        <p>&copy; 2024 HopHelper. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    function toggleDropdown() {
+        const dropdownMenu = document.getElementById('mobileDropdownMenu');
+        dropdownMenu.classList.toggle('open');
+    }
+</script>
+</body>
+</html>
