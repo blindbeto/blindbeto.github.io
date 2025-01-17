@@ -572,7 +572,7 @@ button[type="submit"]:hover {
 }
 
 .inaction-mobile .container {
-    width: 100%; /* Allow the container to occupy the full width */
+    width: 80%; /* Allow the container to occupy the full width */
     padding: 0;  /* Remove extra padding */
     margin: 0 auto; /* Center alignment */
     overflow: visible; /* Ensure no clipping */
@@ -592,11 +592,12 @@ button[type="submit"]:hover {
 }
 
 .inaction-mobile .inaction-item img {
-    width: 110%; /* Ensure the image is large enough to extend beyond the container */
+    width: 100%; /* Ensure the image is large enough to extend beyond the container */
     height: auto;
     display: block;
     margin: 0 auto;
     position: relative;
+    overflow: visible; /* Ensures the tilted images don't cause unwanted scrollbars */
     top: 0; /* Ensure the image starts at the top of the container */
     margin-bottom: 10em; /* Space below the image */
 }
@@ -630,9 +631,9 @@ button[type="submit"]:hover {
 }
 
 .inaction-mobile .inaction-item img.color-wheel-img {
-    width: 110%;
+    width: 100%;
     transform: rotate(-10deg);
-    left: -05%;
+    left: -01%;
 }
 
 .inaction-mobile .inaction-item img.alpha-acid-img {
