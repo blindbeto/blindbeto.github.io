@@ -26,22 +26,64 @@ main {
     border-radius: 10px;
 }
 
-.about-section h1 {
-    font-size: 3.5em;
+.desktop-about-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3em;
+    background: rgba(100, 100, 100, 0.4);
+    border-radius: 10px;
+}
+
+.desktop-about-section h1 {
+    font-size: 5.5em;
     line-height: 0.0001;
     margin-bottom: 0.5em;
     color: #ffffff;
 }
 
-.about-section p {
+.desktop-about-section p {
     font-size: 1.2em;
     line-height: 1.0;
     color: #ffffff;
 }
 
+/* Default: Show desktop, hide mobile */
+.desktop-home {
+    display: block;
+}
+.mobile-home {
+    display: none;
+}
+
+/* Default styling for the MOBILE ABOUT US Container */
+.mobile-about-section {
+    max-width: 70%;
+    margin: auto;
+    background: rgba(100, 100, 100, 0.4);
+    border-radius: 10px;
+}
+
+.mobile-about-section h1 {
+    font-size: 2.5em;
+    line-height: 0.0001;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    color: #ffffff;
+}
+
+.mobile-about-section p {
+    font-size: 1.2em;
+    line-height: 1.0;
+    color: #ffffff;
+    text-align: center; /* Center-align the text */
+    margin: 0 auto; /* Centers the element within its container */
+}
+
 .about-image img {
     border-radius: 10px;
 }
+
+/* --------------------------------------------- SECTION DIVIDER ---------------------------------------------------------- */
 
 p, li {
     text-align: justify;
@@ -94,6 +136,9 @@ header.desktop-header {
     height: 50px;
     margin: 0 1em;
 }
+
+
+/* --------------------------------------------- SECTION DIVIDER -- HEADER SECTION ---------------------------------------------------------- */
 
 header nav ul {
     list-style: none;
@@ -163,6 +208,8 @@ header nav ul li ul.dropdown li a:hover {
     background-color: #45a049; /* Change background color on hover */
 }
 
+
+/* --------------------------------------------- SECTION DIVIDER -- FOOTER SECTION ---------------------------------------------------------- */
 
 /* Style details for DESKTOP FOOTER*/
 footer {
@@ -237,6 +284,7 @@ footer.mobile-footer {
 }
 
 
+/* --------------------------------------------- SECTION DIVIDER -- GENERALS ---------------------------------------------------------- */
 
 /* Style details for SECTION*/
 section {
@@ -279,6 +327,10 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #45a049;
 }
+
+
+
+/* --------------------------------------------- SECTION DIVIDER -- INDEX - FEATURES SECTION (renamed - TOOLS) ---------------------------------------------------------- */
 
 /* Style for the FEATURES Section */
 .features-section {
@@ -380,6 +432,232 @@ button[type="submit"]:hover {
     text-align: right;
 }
 
+/* Features Section (Desktop) */
+.features-desktop {
+    background-color: #4caf50; /* Solid green background */
+    color: white;
+    padding: 2em 0;
+}
+
+.features-section h2 {
+    font-size: 6em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.features-section h3 {
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.feature-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.feature-column {
+    width: 30%;
+    padding: 1em;
+    color: #ffffff;
+}
+
+.feature-column h4 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.feature-column p,
+.feature-column li {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Features Section (Mobile) */
+.features-mobile {
+    background-color: #4caf50; /* Solid green background */
+    color: white;
+    padding: 2em 0;
+}
+
+.mobile-features-section h2 {
+    font-size: 5em;
+    text-align: center;
+}
+
+.mobile-features-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.mobile-features-section .feature-column {
+    margin-bottom: 1.5em;
+}
+
+.mobile-features-section .feature-column h4 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.mobile-features-section .feature-column p,
+.mobile-features-section .feature-column li {
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Desktop: Default, hide mobile version */
+.features-desktop {
+    display: block; /* Show desktop features */
+}
+
+.features-mobile {
+    display: none; /* Hide mobile features */
+}
+
+.features-mobile .feature-column {
+    width: 100%; /* Full width for mobile */
+    box-sizing: border-box; /* Include padding and border in width */
+    margin-bottom: 1.5em; /* Add spacing between columns */
+    padding: 1em; /* Optional padding for better readability */
+    text-align: center; /* Center content */
+}
+
+.separator-features {
+    border: none;
+    border-top: 2px solid #f4f4f4; /* Light gray separator */
+    margin: 2em 0; /* Space above and below the line */
+    width: 100%; /* Reduced width for a centered line */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* --------------------------------------------- SECTION DIVIDER - INDEX - IN ACTION SECTION ---------------------------------------------------------- */
+
+/* INACTION SECTION (DESKTOP) */
+.inaction-desktop {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 2em 0;
+    display: block;
+}
+
+.inaction-desktop .feature-row {
+    display: flex;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.inaction-desktop .feature-item {
+    flex: 1;
+    padding: 1em;
+    text-align: justify;
+}
+
+.inaction-desktop .feature-item img {
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* INACTION SECTION (MOBILE) */
+.inaction-mobile {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 2em 0;
+    display: none;
+}
+
+.inaction-mobile .container {
+    width: 100%; /* Allow the container to occupy the full width */
+    padding: 0;  /* Remove extra padding */
+    margin: 0 auto; /* Center alignment */
+    overflow: visible; /* Ensure no clipping */
+}
+
+.inaction-mobile h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    padding-top: 1.5em;
+}
+
+.inaction-mobile .inaction-item {
+    margin-bottom: 3em;
+    position: relative; /* Allows positioning of the images */
+    overflow: hidden; /* Ensures the tilted images don't cause unwanted scrollbars */
+}
+
+.inaction-mobile .inaction-item img {
+    width: 110%; /* Ensure the image is large enough to extend beyond the container */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 0; /* Ensure the image starts at the top of the container */
+    margin-bottom: 10em; /* Space below the image */
+}
+
+/* Ensure the container expands to fit the tilted image */
+.inaction-mobile .inaction-item {
+    overflow: visible; /* Allow the image to overflow outside the container */
+    margin-bottom: 2em; /* Add spacing between sections */
+    position: relative; /* Keep positioning intact */
+}
+
+/* Optional Styling for Text */
+.inaction-mobile .inaction-item h3 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.inaction-mobile .inaction-item p {
+    padding: 2em;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 2em; /* Space between text and image */
+    text-align: center;
+}
+
+/* Specific Styling for Tilted IMAGES for the mobile */
+.inaction-mobile .inaction-item img.abv-img {
+    width: 90%;
+    transform: rotate(-10deg);
+    left: 01%;
+}
+
+.inaction-mobile .inaction-item img.color-wheel-img {
+    width: 110%;
+    transform: rotate(-10deg);
+    left: -05%;
+}
+
+.inaction-mobile .inaction-item img.alpha-acid-img {
+    width: 90%;
+    transform: rotate(10deg);
+    left: -01%;
+}
+
+.inaction-mobile .inaction-item img.temp-converter-img {
+    width: 90%;
+    transform: rotate(-10deg);
+    left: 01%;
+}
+
+.separator-inaction {
+    border: none;
+    border-top: 2px solid rgba(76, 175, 80, 0.6); /* Semi-transparent green */
+    margin: 2em 0; /* Space above and below the line */
+    width: 80%; /* Centered with reduced width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* --------------------------------------------- SECTION DIVIDER - FAQ ---------------------------------------------------------- */
 
 /* Style details for FAQ Page*/
 .faq-section {
@@ -412,6 +690,9 @@ button[type="submit"]:hover {
 .faq-question:hover {
     background-color: #45a049;
 }
+
+
+/* --------------------------------------------- SECTION DIVIDER - MOBILE HEADER ---------------------------------------------------------- */
 
 /* Style details for MOBILE HEADER*/
 header.mobile-header {
@@ -485,6 +766,9 @@ header.mobile-header {
     background-color: #45a049;
 }
 
+
+/* --------------------------------------------- SECTION DIVIDER - MEDIA QUERY RESTRICTIONS ---------------------------------------------------------- */
+
 /* Style details for MEDIA RESTRICTIONS TO SELECT DESCKTOP OR MOBILE*/
 @media (max-width: 1100px) {
     header.desktop-header {
@@ -527,6 +811,30 @@ header.mobile-header {
     }
 
     footer.mobile-footer {
+        display: block;
+    }
+
+    .desktop-home {
+        display: none;
+    }
+
+    .mobile-home {
+        display: block;
+    }
+
+    .features-desktop {
+        display: none; /* Hide desktop features */
+    }
+
+    .features-mobile {
+        display: block; /* Show mobile features */
+    }
+
+    .inaction-desktop {
+        display: none;
+    }
+
+    .inaction-mobile {
         display: block;
     }
 }

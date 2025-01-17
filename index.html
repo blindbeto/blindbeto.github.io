@@ -10,6 +10,8 @@
 </head>
 <body style="font-family: 'Lato', sans-serif; background-color: #4caf50;">
 
+<!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
+
 <!-- DESKTOP HEADER -->
 <header class="desktop-header">
     <div class="app-name">HopHelper</div>
@@ -19,7 +21,6 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#inAction">In Action</a></li>
                 <li style="position: relative;">
                     <a href="html/features.html">Features</a>
                     <ul class="dropdown">
@@ -45,7 +46,7 @@
 </header>
 
 <!-- MOBILE HEADER -->
-<header class="mobile-header">
+<header class="mobile-header" style="max-width: 80%;">
     <div class="mobile-logo">
         <img src="images/HopHelperGreenTBg.png" alt="HopHelper Logo">
     </div>
@@ -73,10 +74,12 @@
     <a href="html/contact.html" class="bold">Contact</a>
 </div>
 
+<!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
+
 <main>
-    <!-- HOME SECTION -->
-    <section id="home" class="light-green" style="background-image: url('/images/HopsHandsBG.png'); background-size: cover; background-position: center; padding-bottom: 05%; padding-top: 05%; display: flex; justify-content: center; align-items: center; color: #ffffff;">
-        <div class="container about-section" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+    <!-- HOME SECTION (DESKTOP) -->
+    <section id="home" class="light-green desktop-home" style="background-image: url('/images/HopsHandsBG.png'); background-size: cover; background-position: center; padding: 5% 0; color: #ffffff;">
+        <div class="container desktop-about-section" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
             <div class="about-text" style="float: left; width: 50%; display: flex; flex-direction: column; justify-content: center;">
                 <h1>Discover the</h1>
                 <h1>Power of</h1>
@@ -93,14 +96,36 @@
                 <img src="images/MainMenu.png" alt="HopHelper Logo" style="max-width: 50%; height: auto;">
             </div>
         </div>
-        <div style="clear: both;"></div>
     </section>
 
-    <!-- FEATURES SECTION -->
-    <section id="features" class="faq-gradient" style="background: radial-gradient(circle, #4caf50, #98ff98); color: white; margin: 0; padding: 0;">
+    <!-- HOME SECTION (MOBILE) -->
+    <section id="home-mobile" class="light-green mobile-home" style="background-image: url('/images/HopsHandsBG.png'); background-size: cover; background-position: center; padding: 5% 0; color: #ffffff;">
+        <div class="container mobile-about-section" style="text-align: center;">
+            <h1>Discover the</h1>
+            <h1>Power of</h1>
+            <h1>Hop Helper</h1>
+            <div class="about-image" style="margin: 20px 0;">
+                <img src="images/MainMenu.png" alt="HopHelper Logo" style="max-width: 80%; height: auto;">
+            </div>
+            <p>Brew Smarter. Brew Better</p>
+            <div style="display: flex; justify-content: center; gap: 10px; margin-top: 10px;">
+                <a href="#"><img src="images/applestore_button.png" alt="App Store" style="height: 35px;"></a>
+                <!--
+                <a href="#"><img src="../images/googleplay_button.png" alt="Google Play Store" style="height: 35px;"></a>
+                -->
+            </div>
+        </div>
+    </section>
+
+
+    <!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
+
+
+    <!-- FEATURES SECTION (DESKTOP) -->
+    <section id="features" class="features-desktop" style="background-color: #4caf50; color: white; margin: 0; padding: 2em 0;">
         <div class="container features-section">
-            <h2>Features</h2>
-            <h3>Discover the key capabilities that HopHelper brings to your brewing process.</h3>
+            <h2>Tools</h2>
+            <h3>Discover the key capabilities HopHelper brings to your brewing experience.</h3>
             <div class="feature-columns">
                 <div class="feature-column" style="width: 25%;">
                     <h4>For the Brewer</h4>
@@ -123,24 +148,62 @@
                 <div class="feature-column" style="width: 25%;">
                     <h4>Conversion Tools</h4>
                     <p>Convert units effortlessly, including temperature, volume, and weight, making brewing calculations a breeze.</p>
-                    <p>Tools for general application, with beer specific focus.</p>
+                    <p>Tools for general application</p>
                     <ul>
                         <li>Temperature Converter</li>
                         <li>Length Converter</li>
                         <li>Weight Converter</li>
-                        <li>Liquid Converter
-                            <ul>
-                                <li>With beer packaging specific options</li>
-                            </ul>
-                        </li>
+                        <li>Liquid Converter - With beer packaging specific options</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- INACTION SECTION -->
-    <section id="inAction" class="light-gray" style="margin: 0; padding-top: 0;">
+    <!-- FEATURES SECTION (MOBILE) -->
+    <section id="features-mobile" class="features-mobile" style="background-color: #4caf50; color: white; margin: 0; padding: 2em 0;">
+        <div class="container mobile-features-section">
+            <h2 style="text-align: center;">Tools</h2>
+            <h3 style="text-align: center;">Discover the key capabilities HopHelper brings to your brewing experience.</h3>
+            <hr class="separator-features">
+            <div class="feature-column">
+                <h4>For the Brewer</h4>
+                <p>Specific tools for the Brewer</p>
+                <ul>
+                    <li>ABV and Attenuation Calculator</li>
+                    <li>SRM to Lovibond to EBC Converter</li>
+                    <li>Beer Color Tool</li>
+                    <li>Mash Thickness Calculator</li>
+                    <li>Alpha Acid Replacement calculator</li>
+                    <li>SG to Plato to Brix Converter</li>
+                </ul>
+            </div>
+            <hr class="separator-features">
+            <div class="feature-column">
+                <h4>Beer Pairing with Food</h4>
+                <p>Find the perfect pairing for the beer you are about to drink.</p>
+                <p>Or find the perfect beer to the meal you are about to have.</p>
+                <p>And a search function to help find the correct beer or food.</p>
+            </div>
+            <hr class="separator-features">
+            <div class="feature-column">
+                <h4>Conversion Tools</h4>
+                <p>Convert units effortlessly, including temperature, volume, and weight, making brewing calculations a breeze.</p>
+                <p>Tools for general application</p>
+                <ul>
+                    <li>Temperature Converter</li>
+                    <li>Length Converter</li>
+                    <li>Weight Converter</li>
+                    <li>Liquid Converter - With beer packaging specific options</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
+
+    <!-- INACTION SECTION (DESKTOP) -->
+    <section id="inaction-desktop" class="inaction-desktop" style="margin: 0; padding-top: 0;">
         <div class="container">
             <h2 style="font-size: 4em; margin-bottom: 1.5em;">Hop Helper in Action</h2>
             <div class="feature-row" style="display: flex; flex-wrap: nowrap; align-items: center;">
@@ -182,32 +245,39 @@
         </div>
     </section>
 
-    <!-- <section id="faq" class="faq-gradient" style="background: radial-gradient(circle, #4caf50, #98ff98);">
+    <!-- INACTION SECTION (MOBILE) -->
+    <section id="inaction-mobile" class="inaction-mobile" style="margin: 0; padding-top: 0;">
         <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <p>Find answers to the most common questions about HopHelper.</p>
-            -- FAQ content will go here --
+            <h2 style="font-size: 4em; margin-bottom: 1.5em; text-align: center; ">Hop Helper in Action</h2>
+            <hr class="separator-inaction">
+            <div class="inaction-item">
+                <h3 style="text-align: center;">ABV Calculator</h3>
+                <p style="text-align: center;">Accurately calculate the alcohol by volume in your brew, plus other specifications like calories, ABW, real and apparent attenuation.</p>
+                <img src="images/ABVandAtt.png" alt="ABV Calculator" class="abv-img">
+            </div>
+            <hr class="separator-inaction">
+            <div class="inaction-item">
+                <h3 style="text-align: center;">Beer Color Wheel</h3>
+                <p style="text-align: center;">Determine the color of your beer with precision using our Beer Color Wheel, which includes SRM values to help match brewing standards.</p>
+                <img src="images/BeerColorWheel.png" alt="Beer Color Wheel" class="color-wheel-img">
+            </div>
+            <hr class="separator-inaction">
+            <div class="inaction-item">
+                <h3 style="text-align: center;">Alpha Acid Calculator</h3>
+                <p style="text-align: center;">Calculate hop usage precisely with our Alpha Acid Calculator, which helps determine the exact amount of hops needed based on alpha acid levels.</p>
+                <img src="images/AlphaAcidCalc.png" alt="Alpha Acid Calculator" class="alpha-acid-img">
+            </div>
+            <hr class="separator-inaction">
+            <div class="inaction-item">
+                <h3 style="text-align: center;">Temperature Converter</h3>
+                <p style="text-align: center;">Easily convert temperatures between Celsius, Fahrenheit, and more with our built-in Temperature Converter tool.</p>
+                <img src="images/TempConverter.png" alt="Temperature Converter" class="temp-converter-img">
+            </div>
         </div>
     </section>
-
-    <section id="contact" class="light-gray">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="https://formspree.io/f/{your_form_id}" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section> -->
 </main>
+
+<!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
 
 <!-- DESKTOP FOOTER -->
 <footer class="desktop-footer" style="margin: 0; padding-top: 0;">
@@ -286,8 +356,8 @@
             <!-- Social Media Icons -->
             <!-- Uncomment and replace # with links -->
 
-            <a href="#"><img src="images/social_youtube.png" alt="YouTube"></a>
             <!--
+            <a href="#"><img src="images/social_youtube.png" alt="YouTube"></a>
             <a href="#"><img src="images/social_instagram.png" alt="Instagram"></a>
             <a href="#"><img src="images/social_twitterx.png" alt="Twitter"></a>
             <a href="#"><img src="images/social_tiktok.png" alt="TikTok"></a>
@@ -310,6 +380,8 @@
         <p>&copy; 2025 HopHelper. All rights reserved.</p>
     </div>
 </footer>
+
+<!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
 
 <script src="js/script.js"></script>
 </body>
