@@ -10,11 +10,15 @@
 </head>
 <body style="font-family: 'Lato', sans-serif; background-color: #4caf50;">
 
+<!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
+
 <!-- DESKTOP HEADER -->
 <header class="desktop-header">
-    <div class="app-name">HopHelper</div>
+    <a href="../index.html" class="app-name" style="text-decoration: none; color: inherit;">HopHelper</a>
     <div class="logo" style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center;">
-        <img src="../images/HopHelperGreenTBg.png" alt="HopHelper Logo" style="max-height: 80px;">
+        <a href="../index.html">
+            <img src="../images/HopHelperGreenTBg.png" alt="HopHelper Logo" style="max-height: 80px;">
+        </a>
     </div>
     <nav>
         <ul>
@@ -46,13 +50,15 @@
 <!-- MOBILE HEADER -->
 <header class="mobile-header">
     <div class="mobile-logo">
-        <img src="../images/HopHelperGreenTBg.png" alt="HopHelper Logo">
+        <a href="../index.html">
+            <img src="../images/HopHelperGreenTBg.png" alt="HopHelper Logo" style="max-height: 80px;">
+        </a>
     </div>
-    <div class="mobile-app-name">HopHelper</div>
+    <a href="../index.html" class="app-name" style="text-decoration: none; color: inherit;">HopHelper</a>
     <div class="hamburger-menu" onclick="toggleDropdown()">☰</div>
 </header>
 <div class="mobile-dropdown-menu" id="mobileDropdownMenu">
-    <a href="../index.html" class="bold">Home</a></li>
+    <a href="../index.html" class="bold">Home</a>
     <a href="../html/features.html" class="bold">Features</a>
     <a href="../html/abvattenuation.html" class="indented">ABV Calculator</a>
     <a href="../html/beercolor.html" class="indented">Beer Color</a>
@@ -70,6 +76,8 @@
     <a href="../html/faq.html" class="bold">FAQ</a>
     <a href="../html/contact.html" class="bold">Contact</a>
 </div>
+
+<!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
 
 <main>
     <section id="feature-title" class="light-green" style="background-color: #4caf50; background-image: url('../images/HopsHandsBG.png'); background-size: cover; background-position: center; padding: 2em 0; display: flex; justify-content: center; align-items: center; color: #ffffff;">
@@ -141,6 +149,8 @@
     -->
 </main>
 
+<!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
+
 <!-- DESKTOP FOOTER -->
 <footer class="desktop-footer" style="margin: 0; padding-top: 0;">
     <div class="container" style="display: flex; justify-content: space-between; padding: 1em 0;">
@@ -150,7 +160,7 @@
                 <h4 style="font-size: 2em;">HopHelper</h4>
             </div>
             <ul style="list-style: none; padding: 0; margin-top: 0.5em; text-align: left; line-height: 1.8;">
-                <li><a href="#features" style="color: #fff; text-decoration: none;">Features</a></li>
+                <li><a href="../html/features.html" style="color: #fff; text-decoration: none;">Features</a></li>
                 <li><a href="../html/aboutUs.html" style="color: #fff; text-decoration: none;">About Us</a></li>
                 <li><a href="../html/faq.html" style="color: #fff; text-decoration: none;">FAQ</a></li>
                 <li><a href="https://github.com/blindbeto/privacypolicy/blob/main/HopHelperPrivacyPolicy.md" style="color: #fff; text-decoration: none;">Privacy Policy</a></li>
@@ -179,7 +189,7 @@
             <!-- Store Buttons -->
             <div>
                 <p style="margin-bottom: 0.5em;">Download the app here:</p>
-                <a href="#" style="margin-right: 10px;"><img src="../images/applestore_button.png" alt="App Store" style="height: 50px;"></a>
+                <a href="https://apps.apple.com/us/app/hop-helper/id6737778233" style="margin-right: 10px;"><img src="../images/applestore_button.png" alt="App Store" style="height: 50px;"></a>
                 <!--
                 <a href="#"><img src="../images/googleplay_button.png" alt="Google Play Store" style="height: 50px;"></a>
                 -->
@@ -198,10 +208,10 @@
         <h4>HopHelper</h4>
 
         <!-- Second Row: Links and Logo -->
-        <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+        <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
             <!-- Links -->
             <ul>
-                <li><a href="#features">Features</a></li>
+                <li><a href="../html/features.html">Features</a></li>
                 <li><a href="../html/aboutUs.html">About Us</a></li>
                 <li><a href="../html/faq.html">FAQ</a></li>
                 <li><a href="https://github.com/blindbeto/privacypolicy/blob/main/HopHelperPrivacyPolicy.md">Privacy Policy</a></li>
@@ -231,7 +241,7 @@
             <p>Download the app here:</p>
             <!-- Store Buttons -->
             <!-- Uncomment and replace # with links -->
-            <a href="#"><img src="../images/applestore_button.png" alt="App Store"></a>
+            <a href="https://apps.apple.com/us/app/hop-helper/id6737778233"><img src="../images/applestore_button.png" alt="App Store"></a>
             <!--
             <a href="#"><img src="../images/googleplay_button.png" alt="Google Play Store"></a>
             -->
@@ -241,6 +251,8 @@
         <p>&copy; 2025 HopHelper. All rights reserved.</p>
     </div>
 </footer>
+
+<!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
 
 <script src="../js/script.js"></script>
 </body>

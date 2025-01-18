@@ -14,9 +14,11 @@
 
 <!-- DESKTOP HEADER -->
 <header class="desktop-header">
-    <div class="app-name">HopHelper</div>
+    <a href="index.html" class="app-name" style="text-decoration: none; color: inherit;">HopHelper</a>
         <div class="logo" style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center;">
-            <img src="images/HopHelperGreenTBg.png" alt="HopHelper Logo" style="max-height: 80px;">
+            <a href="index.html">
+                <img src="images/HopHelperGreenTBg.png" alt="HopHelper Logo" style="max-height: 80px;">
+            </a>
         </div>
         <nav>
             <ul>
@@ -52,27 +54,27 @@
     </div>
     <div class="mobile-app-name">HopHelper</div>
     <div class="hamburger-menu" onclick="toggleDropdown()">☰</div>
+    <div class="mobile-dropdown-menu" id="mobileDropdownMenu">
+        <a href="index.html" class="bold">Home</a>
+        <a href="html/features.html" class="bold">Features</a>
+        <a href="html/abvattenuation.html" class="indented">ABV Calculator</a>
+        <a href="html/beercolor.html" class="indented">Beer Color</a>
+        <a href="html/mashthickness.html" class="indented">Mash Thickness</a>
+        <a href="html/alphaacid.html" class="indented">Alpha Acid Calculator</a>
+        <a href="html/colorconverter.html" class="indented">Color Converter</a>
+        <a href="html/sugarsconverter.html" class="indented">Sugars Converter</a>
+        <a href="html/liquidmixer.html" class="indented">Mixer Calculator</a>
+        <a href="html/sugartempcorrector.html" class="indented">Sugar Temperture Corrector</a>
+        <a href="html/liquidconverter.html" class="indented">Liquid Converter</a>
+        <a href="html/lengthconverter.html" class="indented">Length Converter</a>
+        <a href="html/tempconverter.html" class="indented">Temperature Converter</a>
+        <a href="html/weightconverter.html" class="indented">Weight Converter</a>
+        <a href="html/foodpairings.html" class="indented">Beer & Food Pairing</a>
+        <a href="html/faq.html" class="bold">FAQ</a>
+        <a href="html/contact.html" class="bold">Contact</a>
+    </div>
 </header>
-<div class="mobile-dropdown-menu" id="mobileDropdownMenu">
-    <a href="index.html" class="bold">Home</a>
-    <a href="#inAction" class="bold">In Action</a>
-    <a href="html/features.html" class="bold">Features</a>
-    <a href="html/abvattenuation.html" class="indented">ABV Calculator</a>
-    <a href="html/beercolor.html" class="indented">Beer Color</a>
-    <a href="html/mashthickness.html" class="indented">Mash Thickness</a>
-    <a href="html/alphaacid.html" class="indented">Alpha Acid Calculator</a>
-    <a href="html/colorconverter.html" class="indented">Color Converter</a>
-    <a href="html/sugarsconverter.html" class="indented">Sugars Converter</a>
-    <a href="html/liquidmixer.html" class="indented">Mixer Calculator</a>
-    <a href="html/sugartempcorrector.html" class="indented">Sugar Temperture Corrector</a>
-    <a href="html/liquidconverter.html" class="indented">Liquid Converter</a>
-    <a href="html/lengthconverter.html" class="indented">Length Converter</a>
-    <a href="html/tempconverter.html" class="indented">Temperature Converter</a>
-    <a href="html/weightconverter.html" class="indented">Weight Converter</a>
-    <a href="html/foodpairings.html" class="indented">Beer & Food Pairing</a>
-    <a href="html/faq.html" class="bold">FAQ</a>
-    <a href="html/contact.html" class="bold">Contact</a>
-</div>
+
 
 <!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
 
@@ -86,7 +88,7 @@
                 <h1>Hop Helper</h1>
                 <p>Brew Smarter. Brew Better</p>
                 <div style="display: flex; gap: 10px;">
-                    <a href="#"><img src="images/applestore_button.png" alt="App Store" style="height: 35px;"></a>
+                    <a href="https://apps.apple.com/us/app/hop-helper/id6737778233"><img src="images/applestore_button.png" alt="App Store" style="height: 35px;"></a>
                     <!--
                     <a href="#"><img src="../images/googleplay_button.png" alt="Google Play Store" style="height: 35px;"></a>
                     -->
@@ -109,7 +111,7 @@
             </div>
             <p>Brew Smarter. Brew Better</p>
             <div style="display: flex; justify-content: center; gap: 10px; margin-top: 10px;">
-                <a href="#"><img src="images/applestore_button.png" alt="App Store" style="height: 35px;"></a>
+                <a href="https://apps.apple.com/us/app/hop-helper/id6737778233"><img src="images/applestore_button.png" alt="App Store" style="height: 35px;"></a>
                 <!--
                 <a href="#"><img src="../images/googleplay_button.png" alt="Google Play Store" style="height: 35px;"></a>
                 -->
@@ -288,7 +290,7 @@
                 <h4 style="font-size: 2em;">HopHelper</h4>
             </div>
             <ul style="list-style: none; padding: 0; margin-top: 0.5em; text-align: left; line-height: 1.8;">
-                <li><a href="#features" style="color: #fff; text-decoration: none;">Features</a></li>
+                <li><a href="html/features.html" style="color: #fff; text-decoration: none;">Features</a></li>
                 <li><a href="html/aboutUs.html" style="color: #fff; text-decoration: none;">About Us</a></li>
                 <li><a href="html/faq.html" style="color: #fff; text-decoration: none;">FAQ</a></li>
                 <li><a href="https://github.com/blindbeto/privacypolicy/blob/main/HopHelperPrivacyPolicy.md" style="color: #fff; text-decoration: none;">Privacy Policy</a></li>
@@ -317,7 +319,7 @@
             <!-- Store Buttons -->
             <div>
                 <p style="margin-bottom: 0.5em;">Download the app here:</p>
-                <a href="#" style="margin-right: 10px;"><img src="images/applestore_button.png" alt="App Store" style="height: 50px;"></a>
+                <a href="https://apps.apple.com/us/app/hop-helper/id6737778233" style="margin-right: 10px;"><img src="images/applestore_button.png" alt="App Store" style="height: 50px;"></a>
                 <!--
                 <a href="#"><img src="images/googleplay_button.png" alt="Google Play Store" style="height: 50px;"></a>
                 -->
@@ -336,10 +338,10 @@
         <h4>HopHelper</h4>
 
         <!-- Second Row: Links and Logo -->
-        <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+        <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
             <!-- Links -->
             <ul>
-                <li><a href="#features">Features</a></li>
+                <li><a href="html/features.html">Features</a></li>
                 <li><a href="html/aboutUs.html">About Us</a></li>
                 <li><a href="html/faq.html">FAQ</a></li>
                 <li><a href="https://github.com/blindbeto/privacypolicy/blob/main/HopHelperPrivacyPolicy.md">Privacy Policy</a></li>
@@ -370,7 +372,7 @@
             <p>Download the app here:</p>
             <!-- Store Buttons -->
             <!-- Uncomment and replace # with links -->
-            <a href="#"><img src="images/applestore_button.png" alt="App Store"></a>
+            <a href="https://apps.apple.com/us/app/hop-helper/id6737778233"><img src="images/applestore_button.png" alt="App Store"></a>
             <!--
             <a href="#"><img src="images/googleplay_button.png" alt="Google Play Store"></a>
             -->
