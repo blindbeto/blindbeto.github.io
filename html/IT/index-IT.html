@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hop Helper</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body style="font-family: 'Lato', sans-serif; background-color: #4caf50;">
+
+<!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
+
+<!-- DESKTOP HEADER -->
+<header class="desktop-header">
+    <a href="index-IT.html" class="app-name" style="text-decoration: none; color: inherit;">HopHelper</a>
+    <div class="logo" style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center;">
+        <a href="index-IT.html">
+            <img src="/images/HopHelperGreenTBg.png" alt="Logo HopHelper" style="max-height: 80px;">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index-IT.html">Home</a></li>
+            <li style="position: relative;">
+                <a href="features-IT.html">Funzionalità</a>
+                <ul class="dropdown">
+                    <li><a href="abvattenuation-IT.html">ABV</a></li>
+                    <li><a href="beercolor-IT.html">Colore della Birra</a></li>
+                    <li><a href="mashthickness-IT.html">Spessore del Mash</a></li>
+                    <li><a href="alphaacid-IT.html">Calcolatore Acido Alfa</a></li>
+                    <li><a href="colorconverter-IT.html">Convertitore Colore</a></li>
+                    <li><a href="sugarsconverter-IT.html">Convertitore Zuccheri</a></li>
+                    <li><a href="liquidmixer-IT.html">Calcolatore Miscele</a></li>
+                    <li><a href="sugartempcorrector-IT.html">Correttore Temperatura Zucchero</a></li>
+                    <li><a href="liquidconverter-IT.html">Convertitore Liquidi</a></li>
+                    <li><a href="lengthconverter-IT.html">Convertitore Lunghezza</a></li>
+                    <li><a href="tempconverter-IT.html">Convertitore Temperatura</a></li>
+                    <li><a href="weightconverter-IT.html">Convertitore Peso</a></li>
+                    <li><a href="foodpairings-IT.html">Abbinamenti Cibo & Birra</a></li>
+                </ul>
+            </li>
+            <li><a href="faq-IT.html">FAQ</a></li>
+            <li><a href="contact-IT.html">Contatto</a></li>
+            <li style="position: relative;">
+                <a href="#">
+                    <img src="/images/flags/itFlag.png" alt="Italiano" class="flag-inline"> IT
+                </a>
+                <ul class="dropdown language-dropdown">
+                    <li><a href="index.html"><img src="/images/flags/enFlag.png" alt="English" class="flag-inline"> EN</a></li>
+                    <li><a href="/html/ES/index-ES.html"><img src="/images/flags/esFlag.png" alt="Español" class="flag-inline"> ES</a></li>
+                    <li><a href="/html/FR/index-FR.html"><img src="/images/flags/frFlag.png" alt="Français" class="flag-inline"> FR</a></li>
+                    <!-- <li><a href="/html/IT/index-IT.html"><img src="/images/flags/itFlag.png" alt="Italiano" class="flag-inline"> IT</a></li>  -->
+                    <li><a href="/html/DE/index-DE.html"><img src="/images/flags/deFlag.png" alt="Deutsch" class="flag-inline"> DE</a></li>
+                    <li><a href="/html/JA/index-JA.html"><img src="/images/flags/jpFlag.png" alt="日本語" class="flag-inline"> JP</a></li>
+                    <!--
+                    <li><a href="/html/AR/index-AR.html"><img src="/images/flags/arFlag.png" alt="عربي" class="flag-inline"> AR</a></li>
+                    -->
+                    <li><a href="/html/PT/index-PT.html"><img src="/images/flags/ptFlag.png" alt="Português" class="flag-inline"> PT</a></li>
+                    <li><a href="/html/KO/index-KO.html"><img src="/images/flags/koFlag.png" alt="한국인" class="flag-inline"> KO</a></li>
+                    <!--
+                    <li><a href="/html/CH/index-CH.html"><img src="/images/flags/chFlag.png" alt="中国人" class="flag-inline"> CH</a></li>
+                    -->
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- MOBILE HEADER -->
+<header class="mobile-header">
+    <div class="mobile-logo">
+        <img src="/images/HopHelperGreenTBg.png" alt="Logo HopHelper">
+    </div>
+    <div class="mobile-app-name">HopHelper</div>
+    <div class="hamburger-menu" onclick="toggleDropdown()">☰</div>
+    <div class="mobile-dropdown-menu" id="mobileDropdownMenu">
+        <a href="index-IT.html" class="bold">Home</a>
+        <a href="features-IT.html" class="bold">Funzionalità</a>
+        <a href="abvattenuation-IT.html" class="indented">Calcolatore ABV</a>
+        <a href="beercolor-IT.html" class="indented">Colore della Birra</a>
+        <a href="mashthickness-IT.html" class="indented">Spessore del Mash</a>
+        <a href="alphaacid-IT.html" class="indented">Calcolatore Acido Alfa</a>
+        <a href="colorconverter-IT.html" class="indented">Convertitore Colore</a>
+        <a href="sugarsconverter-IT.html" class="indented">Convertitore Zuccheri</a>
+        <a href="liquidmixer-IT.html" class="indented">Calcolatore Miscele</a>
+        <a href="sugartempcorrector-IT.html" class="indented">Correttore Temperatura Zucchero</a>
+        <a href="liquidconverter-IT.html" class="indented">Convertitore Liquidi</a>
+        <a href="lengthconverter-IT.html" class="indented">Convertitore Lunghezza</a>
+        <a href="tempconverter-IT.html" class="indented">Convertitore Temperatura</a>
+        <a href="weightconverter-IT.html" class="indented">Convertitore Peso</a>
+        <a href="foodpairings-IT.html" class="indented">Abbinamenti Cibo & Birra</a>
+        <a href="faq-IT.html" class="bold">FAQ</a>
+        <a href="contact-IT.html" class="bold">Contatto</a>
+    </div>
+</header>
+
+
+
+<!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
+
+<main>
+    <!-- HOME SECTION (DESKTOP) -->
+    <section id="home" class="light-green desktop-home" style="background-image: url('/images/HopsHandsBG.png'); background-size: cover; background-position: center; padding: 5% 0; color: #ffffff;">
+        <div class="container desktop-about-section" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+            <div class="about-text" style="float: left; width: 50%; display: flex; flex-direction: column; justify-content: center;">
+                <h1>Scopri la</h1>
+                <h1>Potenza di</h1>
+                <h1>Hop Helper</h1>
+                <p>Produci in modo intelligente. Produci meglio.</p>
+                <div style="display: flex; gap: 10px;">
+                    <a href="https://apps.apple.com/us/app/hop-helper/id6737778233"><img src="/images/applestore_button.png" alt="App Store" style="height: 35px;"></a>
+                    <a href="#"><img src="/images/googleplay_button.png" alt="Google Play Store" style="height: 35px;"></a>
+                </div>
+            </div>
+            <div class="about-image" style="float: right; width: 45%; display: flex; justify-content: center; align-items: center;">
+                <img src="/images/MainMenu.png" alt="Logo HopHelper" style="max-width: 50%; height: auto;">
+            </div>
+        </div>
+    </section>
+
+    <!-- HOME SECTION (MOBILE) -->
+    <section id="home-mobile" class="light-green mobile-home" style="background-image: url('/images/HopsHandsBG.png'); background-size: cover; background-position: center; padding: 5% 0; color: #ffffff;">
+        <div class="container mobile-about-section" style="text-align: center;">
+            <h1>Scopri la</h1>
+            <h1>Potenza di</h1>
+            <h1>Hop Helper</h1>
+            <div class="about-image" style="margin: 20px 0;">
+                <img src="/images/MainMenu.png" alt="Logo HopHelper" style="max-width: 80%; height: auto;">
+            </div>
+            <p>Produci in modo intelligente. Produci meglio.</p>
+            <div style="display: flex; justify-content: center; gap: 10px; margin-top: 10px;">
+                <a href="https://apps.apple.com/us/app/hop-helper/id6737778233"><img src="/images/applestore_button.png" alt="App Store" style="height: 35px;"></a>
+                <a href="#"><img src="/images/googleplay_button.png" alt="Google Play Store" style="height: 35px;"></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
+
+
+    <!-- FEATURES SECTION (DESKTOP) -->
+    <section id="features" class="features-desktop" style="background-color: #4caf50; color: white; margin: 0; padding: 2em 0;">
+        <div class="container features-section">
+            <h2>Strumenti</h2>
+            <h3>Scopri le funzioni principali che HopHelper porta nella tua esperienza di produzione.</h3>
+            <div class="feature-columns">
+                <div class="feature-column" style="width: 25%;">
+                    <h4>Per il Birraio</h4>
+                    <p>Strumenti specifici per i birrai</p>
+                    <ul>
+                        <li>Calcolatore ABV e Attenuazione</li>
+                        <li>Convertitore SRM → Lovibond → EBC</li>
+                        <li>Strumento Colore Birra</li>
+                        <li>Calcolatore Spessore Mosto</li>
+                        <li>Calcolatore Sostituzione Acido Alfa</li>
+                        <li>Convertitore SG → Plato → Brix</li>
+                    </ul>
+                </div>
+                <div class="feature-column" style="width: 25%;">
+                    <h4>Abbinamento Birra e Cibo</h4>
+                    <p>Trova l’abbinamento perfetto per la birra che stai per gustare.</p>
+                    <p>Oppure trova la birra perfetta per il tuo prossimo pasto.</p>
+                    <p>Inclusa una funzione di ricerca per aiutarti a scegliere.</p>
+                </div>
+                <div class="feature-column" style="width: 25%;">
+                    <h4>Strumenti di Conversione</h4>
+                    <p>Converti facilmente unità di temperatura, volume e peso per semplificare i calcoli di birrificazione.</p>
+                    <p>Strumenti per uso generale</p>
+                    <ul>
+                        <li>Convertitore di Temperatura</li>
+                        <li>Convertitore di Lunghezza</li>
+                        <li>Convertitore di Peso</li>
+                        <li>Convertitore di Liquidi – con opzioni specifiche per l’imballaggio della birra</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION (MOBILE) -->
+    <section id="features-mobile" class="features-mobile" style="background-color: #4caf50; color: white; margin: 0; padding: 2em 0;">
+        <div class="container mobile-features-section">
+            <h2 style="text-align: center;">Strumenti</h2>
+            <h3 style="text-align: center;">Scopri le funzioni principali che HopHelper porta nella tua esperienza di produzione.</h3>
+            <hr class="separator-features">
+            <div class="feature-column">
+                <h4>Per il Birraio</h4>
+                <p>Strumenti specifici per i birrai</p>
+                <ul>
+                    <li>Calcolatore ABV e Attenuazione</li>
+                    <li>Convertitore SRM → Lovibond → EBC</li>
+                    <li>Strumento Colore Birra</li>
+                    <li>Calcolatore Spessore Mosto</li>
+                    <li>Calcolatore Sostituzione Acido Alfa</li>
+                    <li>Convertitore SG → Plato → Brix</li>
+                </ul>
+            </div>
+            <hr class="separator-features">
+            <div class="feature-column">
+                <h4>Abbinamento Birra e Cibo</h4>
+                <p>Trova l’abbinamento perfetto per la birra che stai per gustare.</p>
+                <p>Oppure trova la birra perfetta per il tuo prossimo pasto.</p>
+                <p>Inclusa una funzione di ricerca per aiutarti a scegliere.</p>
+            </div>
+            <hr class="separator-features">
+            <div class="feature-column">
+                <h4>Strumenti di Conversione</h4>
+                <p>Converti facilmente unità di temperatura, volume e peso per semplificare i calcoli di birrificazione.</p>
+                <p>Strumenti per uso generale</p>
+                <ul>
+                    <li>Convertitore di Temperatura</li>
+                    <li>Convertitore di Lunghezza</li>
+                    <li>Convertitore di Peso</li>
+                    <li>Convertitore di Liquidi – con opzioni specifiche per l’imballaggio della birra</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
+
+    <!-- INACTION SECTION (DESKTOP) -->
+    <section id="inaction-desktop" class="inaction-desktop" style="margin: 0; padding-top: 0;">
+        <div class="container">
+            <h2 style="font-size: 4em; margin-bottom: 1.5em;">Hop Helper in Azione</h2>
+
+            <div class="feature-row" style="display: flex; flex-wrap: nowrap; align-items: center;">
+                <div class="feature-item" style="flex: 1; padding: 1em; display: flex; justify-content: center; align-items: center;">
+                    <img src="/images/ABVandAtt.png" alt="Calcolatore ABV" style="max-width: 50%; height: auto;">
+                </div>
+                <div class="feature-item" style="flex: .6; padding: 10em; display: flex; flex-direction: column; justify-content: center; text-align: justify;">
+                    <h3>Calcolatore ABV</h3>
+                    <p>Calcola con precisione l'alcol per volume nella tua birra, insieme a calorie, ABW, attenuazione reale e apparente.</p>
+                </div>
+            </div>
+
+            <div class="feature-row" style="display: flex; flex-wrap: nowrap; align-items: center;">
+                <div class="feature-item" style="flex: .3; padding: 5em; display: flex; flex-direction: column; justify-content: center; text-align: justify;">
+                    <h3>Ruota Colore Birra</h3>
+                    <p>Determina con precisione il colore della birra utilizzando la ruota dei colori con valori SRM per allinearsi agli standard di produzione.</p>
+                </div>
+                <div class="feature-item" style="flex: 1; padding: 1em; display: flex; justify-content: center; align-items: center;">
+                    <img src="/images/BeerColorWheel.png" alt="Ruota Colore Birra" style="max-width: 70%; height: auto;">
+                </div>
+            </div>
+
+            <div class="feature-row" style="display: flex; flex-wrap: nowrap; align-items: center;">
+                <div class="feature-item" style="flex: 1; padding: 1em; display: flex; justify-content: center; align-items: center;">
+                    <img src="/images/AlphaAcidCalc.png" alt="Calcolatore Acido Alfa" style="max-width: 50%; height: auto;">
+                </div>
+                <div class="feature-item" style="flex: .6; padding: 10em; display: flex; flex-direction: column; justify-content: center; text-align: justify;">
+                    <h3>Calcolatore Acido Alfa</h3>
+                    <p>Calcola con precisione la quantità di luppolo necessaria in base al livello di acido alfa disponibile.</p>
+                </div>
+            </div>
+
+            <div class="feature-row" style="display: flex; flex-wrap: nowrap; align-items: center;">
+                <div class="feature-item" style="flex: .6; padding: 10em; display: flex; flex-direction: column; justify-content: center; text-align: justify;">
+                    <h3>Convertitore di Temperatura</h3>
+                    <p>Converti facilmente le temperature tra Celsius, Fahrenheit e altro con il nostro strumento integrato.</p>
+                </div>
+                <div class="feature-item" style="flex: 1; padding: 1em; display: flex; justify-content: center; align-items: center;">
+                    <img src="/images/TempConverter.png" alt="Convertitore di Temperatura" style="max-width: 50%; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INACTION SECTION (MOBILE) -->
+    <section id="inaction-mobile" class="inaction-mobile" style="margin: 0; padding-top: 0;">
+        <div class="container">
+            <h2 style="font-size: 4em; margin-bottom: 1.5em; text-align: center;">Hop Helper in Azione</h2>
+            <hr class="separator-inaction">
+            <div class="inaction-item">
+                <h3 style="text-align: center;">Calcolatore ABV</h3>
+                <p style="text-align: center;">Calcola con precisione l'alcol per volume della tua birra, insieme a calorie, ABW, attenuazione reale e apparente.</p>
+                <img src="/images/ABVandAtt.png" alt="Calcolatore ABV" class="abv-img">
+            </div>
+            <hr class="separator-inaction">
+            <div class="inaction-item">
+                <h3 style="text-align: center;">Ruota Colore Birra</h3>
+                <p style="text-align: center;">Determina con precisione il colore della birra utilizzando la ruota con valori SRM per gli standard di produzione.</p>
+                <img src="/images/BeerColorWheel.png" alt="Ruota Colore" class="color-wheel-img">
+            </div>
+            <hr class="separator-inaction">
+            <div class="inaction-item">
+                <h3 style="text-align: center;">Calcolatore Acido Alfa</h3>
+                <p style="text-align: center;">Calcola con precisione la quantità di luppolo necessaria in base ai livelli di acido alfa disponibili.</p>
+                <img src="/images/AlphaAcidCalc.png" alt="Calcolatore Acido Alfa" class="alpha-acid-img">
+            </div>
+            <hr class="separator-inaction">
+            <div class="inaction-item">
+                <h3 style="text-align: center;">Convertitore di Temperatura</h3>
+                <p style="text-align: center;">Converti facilmente tra Celsius, Fahrenheit e altre unità con il nostro strumento integrato.</p>
+                <img src="/images/TempConverter.png" alt="Convertitore Temperatura" class="temp-converter-img">
+            </div>
+        </div>
+    </section>
+</main>
+
+<!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
+
+<!-- DESKTOP FOOTER -->
+<footer class="desktop-footer" style="margin: 0; padding-top: 0;">
+    <div class="container" style="display: flex; justify-content: space-between; padding: 1em 0;">
+        <!-- Prima Colonna -->
+        <div style="flex: 1;">
+            <div style="display: flex; align-items: center;">
+                <h4 style="font-size: 2em;">HopHelper</h4>
+            </div>
+            <ul style="list-style: none; padding: 0; margin-top: 0.5em; text-align: left; line-height: 1.8;">
+                <li><a href="/html/IT/features-IT.html" style="color: #fff; text-decoration: none;">Funzionalità</a></li>
+                <li><a href="/html/IT/aboutUs-IT.html" style="color: #fff; text-decoration: none;">Chi Siamo</a></li>
+                <li><a href="/html/IT/faq-IT.html" style="color: #fff; text-decoration: none;">Domande Frequenti</a></li>
+                <li><a href="https://github.com/blindbeto/privacypolicy/blob/main/HopHelperPrivacyPolicy.md" style="color: #fff; text-decoration: none;">Informativa sulla Privacy</a></li>
+            </ul>
+        </div>
+
+        <!-- Colonna Centrale -->
+        <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+            <img src="/images/HopHelperGreenTBg.png" alt="Logo HopHelper" style="height: 200px;">
+        </div>
+
+        <!-- Terza Colonna -->
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; text-align: right; padding-top: 3em;">
+            <!-- Social Media -->
+            <p style="margin-bottom: 0.5em;">Seguici qui:</p>
+            <div style="margin-bottom: 1em;">
+                <a href="#" style="margin-right: 10px;"><img src="/images/social_youtube.png" alt="YouTube" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="/images/social_instagram.png" alt="Instagram" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="/images/social_twitterx.png" alt="Twitter" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="/images/social_tiktok.png" alt="TikTok" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="/images/social_facebook.png" alt="Facebook" style="height: 44px;"></a>
+                <a href="#" style="margin-right: 10px;"><img src="/images/social_reddit.png" alt="Reddit" style="height: 44px;"></a>
+            </div>
+
+            <!-- Pulsanti Store -->
+            <div>
+                <p style="margin-bottom: 0.5em;">Scarica l'app qui:</p>
+                <a href="https://apps.apple.com/us/app/hop-helper/id6737778233" style="margin-right: 10px;"><img src="/images/applestore_button.png" alt="App Store" style="height: 50px;"></a>
+                <a href="#"><img src="/images/googleplay_button.png" alt="Google Play Store" style="height: 50px;"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <p style="text-align: center; margin-top: 2em;">&copy; 2025 HopHelper. Tutti i diritti riservati.</p>
+    </div>
+</footer>
+
+<!-- MOBILE FOOTER -->
+<footer class="mobile-footer" style="margin: 0; padding-top: 2em;">
+    <div class="container">
+        <!-- First Row: App Name -->
+        <h4>HopHelper</h4>
+
+        <!-- Second Row: Links and Logo -->
+        <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+            <!-- Links -->
+            <ul>
+                <li><a href="features-IT.html">Funzionalità</a></li>
+                <li><a href="aboutUs-IT.html">Chi Siamo</a></li>
+                <li><a href="faq-IT.html">Domande Frequenti</a></li>
+                <li><a href="https://github.com/blindbeto/privacypolicy/blob/main/HopHelperPrivacyPolicy.md">Informativa sulla Privacy</a></li>
+            </ul>
+            <!-- Logo -->
+            <div>
+                <img src="../../images/HopHelperGreenTBg.png" alt="Logo HopHelper" style="height: 100px;">
+            </div>
+        </div>
+
+        <!-- Language Selector (Mobile Footer) -->
+        <div class="mobile-language-footer">
+            <a href="/index.html"><img src="../../images/flags/enFlag.png" alt="English" class="flag-icon-footer"></a>
+            <a href="/html/ES/index-ES.html"><img src="../../images/flags/esFlag.png" alt="Español" class="flag-icon-footer"></a>
+            <a href="/html/FR/index-FR.html"><img src="../../images/flags/frFlag.png" alt="Français" class="flag-icon-footer"></a>
+            <a href="/html/DE/index-DE.html"><img src="../../images/flags/deFlag.png" alt="Deutsch" class="flag-icon-footer"></a>
+            <a href="/html/JP/index-JP.html"><img src="../../images/flags/jpFlag.png" alt="日本語" class="flag-icon-footer"></a>
+            <a href="/html/KR/index-KR.html"><img src="../../images/flags/koFlag.png" alt="한국어" class="flag-icon-footer"></a>
+            <a href="/html/PT/index-PT.html"><img src="../../images/flags/ptFlag.png" alt="Português" class="flag-icon-footer"></a>
+            <a href="/html/IT/index-IT.html"><img src="../../images/flags/itFlag.png" alt="Italiano" class="flag-icon-footer"></a>
+        </div>
+
+        <!-- Third Row: Social Media and Store Buttons -->
+        <div class="social-media">
+            <p>Seguici qui:</p>
+            <a href="#"><img src="../../images/social_youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="../../images/social_instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="../../images/social_twitterx.png" alt="Twitter"></a>
+            <a href="#"><img src="../../images/social_tiktok.png" alt="TikTok"></a>
+            <a href="#"><img src="../../images/social_facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="../../images/social_reddit.png" alt="Reddit"></a>
+        </div>
+
+        <div class="store-buttons">
+            <p>Scarica l'app qui:</p>
+            <a href="https://apps.apple.com/us/app/hop-helper/id6737778233"><img src="../../images/applestore_button.png" alt="App Store"></a>
+            <a href="#"><img src="../../images/googleplay_button.png" alt="Google Play Store"></a>
+        </div>
+
+        <!-- Fourth Row: Rights Reserved -->
+        <p>&copy; 2025 HopHelper. Tutti i diritti riservati.</p>
+    </div>
+</footer>
+
+<!---------------------------------------------------- SECTION DIVIDER ---------------------------------------------------->
+
+<script src="/js/script.js"></script>
+</body>
+</html>
